@@ -93,6 +93,8 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 			</plugin>
 		</plugins>
+		
+		<finalName>sector-details</finalName>
 	</build>
 
 </project>
