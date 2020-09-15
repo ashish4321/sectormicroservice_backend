@@ -56,6 +56,8 @@ public class ControllerTest {
 		.andExpect(jsonPath("$[1].sectorName",is("second sector")));
 	}
 	
+
+	
 	@Test
 	@DisplayName("Test Sector Found Success Scenario - GET /sectors/1")
 	public void testGetSectorByIdSuccess() throws Exception{
@@ -70,6 +72,8 @@ public class ControllerTest {
 		.andExpect(jsonPath("$.sectorName",is("mock")))
 		.andExpect(jsonPath("$.brief",is("this is mock sector")));
 	}
+	
+
 	
 	@Test
 	@DisplayName("Test all companies in a sector found success scenario - GET /sectors/1/companies")
@@ -91,6 +95,7 @@ public class ControllerTest {
 		.andExpect(jsonPath("$[1].companyName",is("mock company 2")));
 	}
 
+	
 	@Test
 	@DisplayName("Test delete sector found success scenario - DELETE /sectors")
 	public void testDeleteSectorSuccess() throws Exception{
